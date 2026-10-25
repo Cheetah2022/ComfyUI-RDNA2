@@ -39,7 +39,7 @@ set "BOLD=%ESC%[1m"
 set "RESET=%ESC%[0m"
 
 :: Parse --debug flag
-set "DEBUG=true"
+set "DEBUG="
 set "Q=>nul 2>&1"
 set "QQ=--quiet"
 
@@ -295,7 +295,7 @@ echo %GREEN%[*]%RESET% Installing extensions...
 
 cd custom_nodes
 if not exist comfyui-manager git clone https://github.com/Comfy-Org/ComfyUI-Manager %QQ%
-if not exist CFZ-SwitchMenu git clone https://github.com/patientx/CFZ-SwitchMenu.git %QQ%
+if not exist ComfyUI-MemoryVisualization git clone https://github.com/kijai/ComfyUI-MemoryVisualization.git %QQ%
 if not exist CFZ-Caching git clone https://github.com/patientx/CFZ-Caching %QQ%
 if not exist ComfyUI-HFRemoteVae git clone https://github.com/kijai/ComfyUI-HFRemoteVae %QQ%
 if not exist ComfyUI-INT8-Fast-ROCM git clone https://github.com/patientx/ComfyUI-INT8-Fast-ROCM %QQ%
