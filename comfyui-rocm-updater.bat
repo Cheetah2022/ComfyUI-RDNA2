@@ -19,7 +19,7 @@ if errorlevel 1 (
 set "INSTALL_DIR=%~dp0"
 if "%INSTALL_DIR:~-1%"=="\" set "INSTALL_DIR=%INSTALL_DIR:~0,-1%"
 
-set "REPO_URL=https://github.com/patientx-cfz/comfyui-rocm"
+set "REPO_URL=https://github.com/Cheetah2022/ComfyUI-RDNA2"
 set "TEMP_DIR=%INSTALL_DIR%\_update_temp"
 set "PYTHON=%INSTALL_DIR%\python_env\python.exe"
 set "HASH_FILE=%INSTALL_DIR%\.last_update_hash"
