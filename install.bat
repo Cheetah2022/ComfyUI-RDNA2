@@ -338,7 +338,7 @@ if errorlevel 1 goto :install_failed
 :bnb_done
 
 echo %GREEN%[*]%RESET% Installing flash-attention ^(aiter triton backend^)...
-.\python_env\python.exe -m pip install https://github.com/0xDELUXA/flash-attention/releases/download/v2.8.4_win-rocm/flash_attn-2.8.4-py3-none-win_amd64.whl %QQ%
+.\python_env\python.exe -m pip install https://github.com/0xDELUXA/flash-attention/releases/download/v3.0.0_win-rocm/flash_attn_3-3.0.0-py3-none-any.whl %QQ%
 if errorlevel 1 (
     echo %YELLOW%[!]%RESET% Warning: flash-attention install failed, skipping...
     goto :fa_done
